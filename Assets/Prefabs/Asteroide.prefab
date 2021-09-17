@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7588247621344103945}
   - component: {fileID: 9208798688445968414}
   - component: {fileID: 4198581560823511318}
+  - component: {fileID: -5706071520962612102}
   m_Layer: 8
   m_Name: Asteroide
   m_TagString: Untagged
@@ -28,8 +29,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8670083912145774435}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.2940536, y: -0.80179507, z: 0}
-  m_LocalScale: {x: 0.3409, y: 0.3217, z: 1}
+  m_LocalPosition: {x: -4.4401, y: -0.3051, z: 0}
+  m_LocalScale: {x: 0.9964176, y: 0.84453535, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -135,4 +136,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meuRigidbody: {fileID: 7588247621344103945}
+  prefabEfeitos: {fileID: 295549019551878690, guid: d4c893e03227b6e4d8dfaa1756ef7ad5, type: 3}
+  prefabAsteroideVariante: {fileID: 7009353751005512381, guid: 14dbff11e0cff734ca62ba3db5c22e1a, type: 3}
+  quantosAsteroides: 3
   velocidadeMaxima: 1
+--- !u!114 &-5706071520962612102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8670083912145774435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be021d670127ac34f9e7f4e16bbcb819, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meuRigidbody: {fileID: 7588247621344103945}

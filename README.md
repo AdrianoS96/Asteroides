@@ -42,3 +42,22 @@
 ### Project Settings
 * Opção Physics 2D:
    * Olhar opção dos objetos que se colidem
+   
+## Terceiro Dia
+* Configuração de Câmera
+
+* Interface(Pontuação)
+
+* Posição toroidal
+
+* Tempo de Duração do Projetil
+
+* Áudio
+
+* Sistema de Partículas
+
+ ##Links Workshop EBAC
+
+[Dia 1](https://youtu.be/tEjQgqAd-00)
+[Dia 2](https://youtu.be/Gefvsdgow_8)
+[Dia 3](https://youtu.be/pA3ScgN_2KM)

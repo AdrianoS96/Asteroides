@@ -11,15 +11,19 @@ public class ComportamentoJogador : MonoBehaviour
 
     public Rigidbody2D prefabProjetil;
     public float velocidadeProjetil = 10.0f;
+    public float duracaoProjetilEmSegundos = 1.0f;
+   
 
     void Start()
     {
+        
     }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            
             Rigidbody2D projetil = Instantiate(
                 prefabProjetil,
                 meuRigidbody.position,
@@ -27,6 +31,7 @@ public class ComportamentoJogador : MonoBehaviour
             );
 
             projetil.velocity = transform.up * velocidadeProjetil;
+            Destroy(projetil.gameObject, duracaoProjetilEmSegundos);
         }
     }
 
@@ -35,6 +40,12 @@ public class ComportamentoJogador : MonoBehaviour
         if (Input.GetKey(KeyCode.UpArrow))
         {
             Vector3 direcao = transform.up * aceleracao;
+            meuRigidbody.AddForce(direcao, ForceMode2D.Force);
+        }
+
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+            Vector3 direcao = -transform.up * aceleracao;
             meuRigidbody.AddForce(direcao, ForceMode2D.Force);
         }
 
